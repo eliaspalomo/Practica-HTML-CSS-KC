@@ -1,4 +1,55 @@
-.login{
-  
-    
+:root {
+    --body-top:33vw;
+}
+header, #login, #forbiden{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+input[type='email'],
+input[type='password']{
+    width: 90%;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+}
+
+input[type='submit']{
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    min-width: 10rem;
+    border-radius: 5px;
+    border: 0;
+    margin: 0.5rem;
+    background: gray;
+}
+
+#forbiden {
+    align-items: flex-end;
+    font-size: .9rem;
+    color: white;
+}
+
+body{
+    background-image: url(../img/Flag_of_Sweden.svg.png);
+    background-repeat: no-repeat;
+}
+
+@media (orientation : landscape){
+    body{
+        background-size: cover;
+    }
+}
+
+@media (orientation : portrait){
+    body{
+        position: relative;
+        top:var(--body-top);
+        background-position: center center;
+        background-size: 100%;
+        background-position-y: var(--body-top);
+    }
 }

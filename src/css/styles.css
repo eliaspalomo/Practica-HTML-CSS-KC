@@ -1,6 +1,11 @@
-@import url('./login.css');
-@import url('./img.css');
+:root{
+    --navbar-height: 3rem;
+}
 
 *{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+html{
+    scroll-behavior: smooth;
+  }

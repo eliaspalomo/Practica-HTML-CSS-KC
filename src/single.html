@@ -4,20 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contenido</title>
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/single.css">
+    <link rel="stylesheet" href="./css/carrusel.css">
 </head>
 <body>
     <header>
         <nav id="navbar" class="navbar">
-            <img src="./img/vhs.jpg" alt="Rebobine, por favor">
-            <a href="./main.html">Volver</a>
-            <form action="./main.html" method="GET" id="findMain" class="findMain">
-              <label for="findText">Buscar:</label>
-              <input type="text" id="findText" name="findText" required /><br />
-              <input type="submit" value="Buscar" />
-            </form>
-            <a href="./index.html"><img src="./img/logout.png" alt="Desconectar"></a>
-          </nav>
+          <div class="logo">Rebobine, por favor</div>
+          <input type="checkbox" id="vhs-ch" />
+          <label for="vhs-ch" class="vhs-lbl"></label>
+          <ul class="navbar-list">
+              <li class="navbar-item"><a href="./main.html">Volver</a></li>
+              <li class="navbar-item">
+                <label for="findText">Buscar:</label>
+                <input type="text" id="findText" name="findText" required />
+                <input type="submit" value="Buscar" />
+              </li>
+          </ul>
+          <div class="logo logout"><a href="./index.html"><img src="./img/logout.png" alt="Desconectar"></a></div>
+        </nav>
     </header>
     <main>
         <section>
@@ -35,18 +43,18 @@
                  No sólo consiguen dar un nuevo impulso al videoclub, sino a toda la comunidad.</div>
             <div><strong>Listado de Actores:</strong>
                 <ul>
-                    <li><a href="https://www.filmaffinity.com/es/search.php?stype=cast&amp;sn&amp;stext=Jack%20Black" title="Jack Black" target="_blank" rel="noopener noreferrer nofollow">Jack Black</a> como Jerry</li>
-                    <li><a href="https://www.filmaffinity.com/es/search.php?stype=cast&amp;sn&amp;stext=Mos%20Def" title="Mos Def" target="_blank" rel="noopener noreferrer nofollow">Mos Def</a> como Mike</li>
-                    <li><a href="https://www.filmaffinity.com/es/search.php?stype=cast&amp;sn&amp;stext=Danny%20Glover" title="Danny Glover" target="_blank" rel="noopener noreferrer nofollow">Danny Glover</a> como Mr.Flecher</li>
-                    <li><a href="https://www.filmaffinity.com/es/search.php?stype=cast&amp;sn&amp;stext=Mia%20Farrow" title="Mia Farrow" target="_blank" rel="noopener noreferrer nofollow">Mia Farrow</a> como Miss Falewicz</li>
-                    <li><a href="https://www.filmaffinity.com/es/search.php?stype=cast&amp;sn&amp;stext=Melonie%20Diaz" title="Melonie Diaz" target="_blank" rel="noopener noreferrer nofollow">Melonie Diaz</a> como Alma</li>
-                    <li><a href="https://www.filmaffinity.com/es/search.php?stype=cast&amp;sn&amp;stext=Irv%20Gooch" title="Irv Gooch" target="_blank" rel="noopener noreferrer nofollow">Irv Gooch</a> como Wilson</li>
-                    <li><a href="https://www.filmaffinity.com/es/search.php?stype=cast&amp;sn&amp;stext=Chandler%20Parker" title="Chandler Parker" target="_blank" rel="noopener noreferrer nofollow">Chandler Parker</a> como Craig</li>
-                    <li><a href="https://www.filmaffinity.com/es/search.php?stype=cast&amp;sn&amp;stext=Arjay%20Smith" title="Arjay Smith" target="_blank" rel="noopener noreferrer nofollow">Arjay Smith</a> como Manny</li>
-                    <li><a href="https://www.filmaffinity.com/es/search.php?stype=cast&amp;sn&amp;stext=Quinton%20Aaron" title="Quinton Aaron" target="_blank" rel="noopener noreferrer nofollow">Quinton Aaron</a> como Q</li>
-                    <li><a href="https://www.filmaffinity.com/es/search.php?stype=cast&amp;sn&amp;stext=Sigourney%20Weaver" title="Sigourney Weaver" target="_blank" rel="noopener noreferrer nofollow">Sigourney Weaver</a> como Ms. Lawson</li>
-                    <li><a href="https://www.filmaffinity.com/es/search.php?stype=cast&amp;sn&amp;stext=P.J.%20Byrne" title="P.J. Byrne" target="_blank" rel="noopener noreferrer nofollow">P.J. Byrne</a> como Mr. Baker</li>
-                    <li><a href="https://www.filmaffinity.com/es/search.php?stype=cast&amp;sn&amp;stext=Paul%20Dinello" title="Paul Dinello" target="_blank" rel="noopener noreferrer nofollow">Paul Dinello</a> como Mr. Rooney</li>
+                    <li><a href="https://www.imdb.com/name/nm0085312/?ref_=tt_ov_st_sm" title="Jack Black" target="_blank" rel="noopener noreferrer nofollow">Jack Black</a> como Jerry</li>
+                    <li><a href="https://www.imdb.com/name/nm0080049/?ref_=ttfc_fc_cl_t2" title="Yasiin Bey" target="_blank" rel="noopener noreferrer nofollow">Yasiin Bey</a> como Mike</li>
+                    <li><a href="https://www.imdb.com/name/nm0000418/?ref_=ttfc_fc_cl_t3" title="Danny Glover" target="_blank" rel="noopener noreferrer nofollow">Danny Glover</a> como Mr.Flecher</li>
+                    <li><a href="https://www.imdb.com/name/nm0001201/?ref_=ttfc_fc_cl_t4" title="Mia Farrow" target="_blank" rel="noopener noreferrer nofollow">Mia Farrow</a> como Miss Falewicz</li>
+                    <li><a href="https://www.imdb.com/name/nm0246686/?ref_=ttfc_fc_cl_t5" title="Melonie Diaz" target="_blank" rel="noopener noreferrer nofollow">Melonie Diaz</a> como Alma</li>
+                    <li><a href="https://www.imdb.com/name/nm0328644/?ref_=ttfc_fc_cl_t6" title="Irv Gooch" target="_blank" rel="noopener noreferrer nofollow">Irv Gooch</a> como Wilson</li>
+                    <li><a href="https://www.imdb.com/name/nm0662122/?ref_=ttfc_fc_cl_t7" title="Chandler Parker" target="_blank" rel="noopener noreferrer nofollow">Chandler Parker</a> como Craig</li>
+                    <li><a href="https://www.imdb.com/name/nm0807351/?ref_=ttfc_fc_cl_t8" title="Arjay Smith" target="_blank" rel="noopener noreferrer nofollow">Arjay Smith</a> como Manny</li>
+                    <li><a href="https://www.imdb.com/name/nm2466842/?ref_=ttfc_fc_cl_t9" title="Quinton Aaron" target="_blank" rel="noopener noreferrer nofollow">Quinton Aaron</a> como Q</li>
+                    <li><a href="https://www.imdb.com/name/nm0000244/?ref_=ttfc_fc_cl_t42" title="Sigourney Weaver" target="_blank" rel="noopener noreferrer nofollow">Sigourney Weaver</a> como Ms. Lawson</li>
+                    <li><a href="https://www.imdb.com/name/nm0126260/?ref_=ttfc_fc_cl_t36" title="P.J. Byrne" target="_blank" rel="noopener noreferrer nofollow">P.J. Byrne</a> como Mr. Baker</li>
+                    <li><a href="https://www.imdb.com/name/nm0227576/?ref_=ttfc_fc_cl_t41" title="Paul Dinello" target="_blank" rel="noopener noreferrer nofollow">Paul Dinello</a> como Mr. Rooney</li>
                     
                 </ul>
             </div>
@@ -58,7 +66,7 @@
         </section>
     </main>
     <footer>
-        <section>
+        <section class="carrusel"  id = "suecadas">
         <h1>Relacionadas</h1>
         <article>
           <a href="./single.html"><img src="./img/Ghostbusters.jpg" alt="Cazafantasmas"></a>

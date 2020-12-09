@@ -4,34 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peliculas suecadas</title>
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/rebobine.css">
+    <link rel="stylesheet" href="./css/carrusel.css">
 </head>
 <body>
     <header>
       <nav id="navbar" class="navbar">
-        <img src="./img/vhs.jpg" alt="Rebobine, por favor">
+        <div class="logo">Rebobine, por favor</div>
+        <input type="checkbox" id="vhs-ch" />
+        <label for="vhs-ch" class="vhs-lbl"></label>
         <ul class="navbar-list">
-          <li class="navbar-item"><a href="#rebobine">Rebobine, por favor</a></li>
+          <li class="navbar-item"><a href="#rebobine">La pelicula</a></li>
           <li class="navbar-item"><a href="#originales">Originales</a></li>
           <li class="navbar-item"><a href="#suecadas">Suecadas</a></li>
           <li class="navbar-item"><a href="#parodias">Parodias</a></li>
+          <li class="navbar-item"> 
+              <label for="findText">Buscar:</label>
+              <input type="text" id="findText" name="findText" required />
+              <input type="submit" value="Buscar" />
+          </li>
         </ul>
-        <form action="./main.html" method="GET" id="findMain" class="findMain">
-          <label for="findText">Buscar:</label>
-          <input type="text" id="findText" name="findText" required /><br />
-          <input type="submit" value="Buscar" />
-        </form>
-        <a href="./index.html"><img src="./img/logout.png" alt="Desconectar"></a>
+        <div class="logo logout"><a href="./index.html"><img src="./img/logout.png" alt="Desconectar"></a></div>
       </nav>
     </header>
     <main>
-      <section id = "rebobine">
-        <h1>Rebobine, por favor</h1>
-        <article>
-           <a href="./single.html"><img src="./img/rebobine.jpg" alt="Rebobine, por favor"></a>
+      <section class="rebobine" id = "rebobine">
+        <h1>La pelicula</h1>
+        <article class="reb-arti">
+           <div><a href="./single.html"><img src="./img/rebobine.jpg" alt="Rebobine, por favor"></a></div>
+           <div>
+            <p><strong>Clasificación:</strong>Todos los publicos</p>
+            <p><strong>Año de publicación:</strong>2008</p>
+            <p><strong>Sinopsis:</strong>
+                Mientras Jerry intenta sabotear la planta eléctrica que, según él, le derrite el cerebro,
+                 acaba magnetizado y sin querer consigue borrar todas las cintas del anticuado videoclub
+                 donde trabaja Mike , su mejor amigo. Para complacer a la leal clienta la señorita Falewicz,
+                 entrada en años y algo senil, que desea arrendar el filme Los cazafantasmas, Jerry y Mike
+                 deciden realizar un remake de la película en la chatarrería de Jerry. Se quedan asombrados
+                 al descubrir que su versión de la película es un auténtico éxito. Mike, Jerry y unos cuantos
+                 amigos del vecindario empiezan a dedicarse a la producción de remakes, tales como King Kong.
+                 No sólo consiguen dar un nuevo impulso al videoclub, sino a toda la comunidad.</p>
+           </div>
         </article>
       </section>
-      <section id = "originales">
+      <section class="carrusel" id = "originales">
         <h1>Originales</h1>
         <article>
           <a href="./single.html"><img src="./img/Ghostbusters_org.jpg" alt="Cazafantasmas"></a>
@@ -49,7 +68,7 @@
           <a href="./single.html"><img src="./img/Driving_Miss_Daisy_org.jpg" alt="Paseando a Miss Daisy"></a>
         </article>
       </section>
-      <section id = "suecadas">
+      <section class="carrusel" id = "suecadas">
         <h1>Suecadas</h1>
         <article>
           <a href="./single.html"><img src="./img/Ghostbusters.jpg" alt="Cazafantasmas"></a>
@@ -67,7 +86,7 @@
           <a href="./single.html"><img src="./img/Driving_Miss_Daisy.jpg" alt="Paseando a Miss Daisy"></a>
         </article>
       </section>
-      <section id = "parodias">
+      <section class="carrusel" id = "parodias">
         <h1>Parodias</h1>
         <article>
           <a href="./single.html"><img src="./img/spaceball.jpg" alt="Spaceball"></a>

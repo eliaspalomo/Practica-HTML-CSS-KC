@@ -1,0 +1,10 @@
+.rebobine
+{
+    position: relative;
+    top: var(--navbar-height);
+}
+
+.reb-arti{
+    display: grid;
+    grid-template-rows: 20% 80%;
+}

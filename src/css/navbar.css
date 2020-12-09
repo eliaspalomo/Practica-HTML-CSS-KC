@@ -1,0 +1,105 @@
+.navbar{
+    position: fixed;
+    background-color: blue;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: var(--navbar-height);
+}
+
+.logo{
+    line-height: var(--navbar-height);
+    text-align: center;
+    color: gold;
+    font-size: large;
+}
+
+.logout{
+    position: absolute;
+    max-width: 2em;
+    max-height: 1em;
+    top: 0.5rem;
+    right: 0.5rem;
+}
+
+#vhs-ch {
+    display: none;
+  }
+  
+.vhs-lbl {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2rem;
+    height: 2rem;
+}
+
+.vhs-lbl:before {
+    content: '';
+    background-color: gold;
+    width: 1rem;
+    height: 0.12rem;
+    position: absolute;
+    left: 0.45rem;
+    top: 0.65rem;
+    box-shadow: 0 0.25rem 0 0 gold, 0 0.5rem 0 0 gold;
+}
+
+.navbar-list {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#vhs-ch:checked ~ .navbar-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color: blue;
+    height: calc(100vh - var(--navbar-height));
+    opacity: 0.8;
+  }
+
+.navbar-item label,
+.navbar-item a {
+    color: gold;
+}
+
+
+.navbar-item input
+{
+    color: black;
+    line-height: 1rem;
+}
+
+@media (min-width: 900px) {
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .navbar .vhs-lbl {
+      display: none;
+    }
+
+    .navbar .logo {
+      margin: 0 1rem;
+    }
+  
+    .navbar-list {
+        display: flex;
+        position: absolute;
+        left: 15rem;
+    }
+
+    .navbar-item a,
+    .navbar-item label {
+      font-size: 1rem;
+      line-height: var(--navbar-height);
+      padding: 0 1rem;
+    }
+    .navbar-item input{
+        line-height: 1.5rem;
+    }
+}
