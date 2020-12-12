@@ -9,99 +9,241 @@
     <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/rebobine.css">
     <link rel="stylesheet" href="./css/carrusel.css">
+    <link rel="stylesheet" href="./css/footer.css">
 </head>
 <body>
-    <header>
-      <nav id="navbar" class="navbar">
-        <div class="logo">Rebobine, por favor</div>
-        <input type="checkbox" id="vhs-ch" />
-        <label for="vhs-ch" class="vhs-lbl"></label>
-        <ul class="navbar-list">
-          <li class="navbar-item"><a href="#rebobine">La pelicula</a></li>
-          <li class="navbar-item"><a href="#originales">Originales</a></li>
-          <li class="navbar-item"><a href="#suecadas">Suecadas</a></li>
-          <li class="navbar-item"><a href="#parodias">Parodias</a></li>
-          <li class="navbar-item"> 
-              <label for="findText">Buscar:</label>
-              <input type="text" id="findText" name="findText" required />
-              <input type="submit" value="Buscar" />
-          </li>
-        </ul>
-        <div class="logo logout"><a href="./index.html"><img src="./img/logout.png" alt="Desconectar"></a></div>
-      </nav>
-    </header>
+  <nav id="navbar" class="navbar">
+    <div class="logo">Rebobine, por favor</div>
+    <input type="checkbox" id="vhs-ch" />
+    <label for="vhs-ch" class="vhs-lbl"></label>
+    <ul class="navbar-list">
+      <li class="navbar-item"><a href="#rebobine">La pelicula</a></li>
+      <li class="navbar-item"><a href="#originales">Originales</a></li>
+      <li class="navbar-item"><a href="#suecadas">Suecadas</a></li>
+      <li class="navbar-item"><a href="#parodias">Parodias</a></li>
+      <li class="navbar-item"> 
+          <label for="findText">Buscar:</label>
+          <input type="text" id="findText" name="findText" required />
+          <input type="submit" value="Buscar" />
+      </li>
+    </ul>
+    <div class="logo logout"><a href="./index.html"><img src="./img/logout.png" alt="Desconectar"></a></div>
+  </nav>
+  <header class="rebobine" id = "rebobine">
+      <h1>La pelicula</h1>
+      <div class="pelicula">
+         <div class="imagen">
+           <img src="./img/estrella_dorada.jpg" alt="Estrella dorada">
+         </div>
+         <div class="descripcionHeader">
+          <p><strong>Clasificación:</strong>Todos los publicos</p>
+          <p><strong>Año de publicación:</strong>2008</p>
+          <p><strong>Sinopsis:</strong>
+              Mientras Jerry intenta sabotear la planta eléctrica que, según él, le derrite el cerebro,
+               acaba magnetizado y sin querer consigue borrar todas las cintas del anticuado videoclub
+               donde trabaja Mike , su mejor amigo. Para complacer a la leal clienta la señorita Falewicz,
+               entrada en años y algo senil, que desea arrendar el filme Los cazafantasmas, Jerry y Mike
+               deciden realizar un remake de la película en la chatarrería de Jerry. Se quedan asombrados
+               al descubrir que su versión de la película es un auténtico éxito. Mike, Jerry y unos cuantos
+               amigos del vecindario empiezan a dedicarse a la producción de remakes, tales como King Kong.
+               No sólo consiguen dar un nuevo impulso al videoclub, sino a toda la comunidad.</p>
+          <p><a href="./single.html">Detalle...</a></p>
+         </div>
+      </div> 
+  </header>
     <main>
-      <section class="rebobine" id = "rebobine">
-        <h1>La pelicula</h1>
-        <article class="reb-arti">
-           <div><a href="./single.html"><img src="./img/rebobine.jpg" alt="Rebobine, por favor"></a></div>
-           <div>
-            <p><strong>Clasificación:</strong>Todos los publicos</p>
-            <p><strong>Año de publicación:</strong>2008</p>
-            <p><strong>Sinopsis:</strong>
-                Mientras Jerry intenta sabotear la planta eléctrica que, según él, le derrite el cerebro,
-                 acaba magnetizado y sin querer consigue borrar todas las cintas del anticuado videoclub
-                 donde trabaja Mike , su mejor amigo. Para complacer a la leal clienta la señorita Falewicz,
-                 entrada en años y algo senil, que desea arrendar el filme Los cazafantasmas, Jerry y Mike
-                 deciden realizar un remake de la película en la chatarrería de Jerry. Se quedan asombrados
-                 al descubrir que su versión de la película es un auténtico éxito. Mike, Jerry y unos cuantos
-                 amigos del vecindario empiezan a dedicarse a la producción de remakes, tales como King Kong.
-                 No sólo consiguen dar un nuevo impulso al videoclub, sino a toda la comunidad.</p>
-           </div>
-        </article>
-      </section>
       <section class="carrusel" id = "originales">
         <h1>Originales</h1>
         <article>
-          <a href="./single.html"><img src="./img/Ghostbusters_org.jpg" alt="Cazafantasmas"></a>
+          <div class="imagenc org1"><img src="./img/estrella_dorada.jpg" alt="Estrella dorada"></div>
+          <div>
+            <p><strong>Clasificación:</strong>Todos los publicos</p>
+            <p><strong>Año de publicación:</strong>1984</p>
+            <p><strong>Sinopsis:</strong>Peter Venkman, Raymond "Ray" Stantz y Egon Spengler son científicos de la Universidad
+              de Columbia que investigan lo paranormal. Tras su primer encuentro con un fantasma que se manifiesta en la Biblioteca
+              Pública de Nueva York , el decano los despide y descarta la credibilidad de su investigación. En respuesta, crean
+              "Cazafantasmas", un servicio de investigación y eliminación paranormal . Convierten una estación de bomberos en desuso,
+              desarrollan equipos de alta tecnología para capturar y contener fantasmas y convierten un automóvil combinado en el
+              "Ectomobile" para respaldar su negocio.</p>
+              <p><a href="./single.html">Detalle...</a></p>
+           </div>
         </article>
         <article>
-          <a href="./single.html"><img src="./img/2001_org.JPG" alt="2001 Odisea en el espacio"></a>
+          <div class="imagenc org2"><img src="./img/estella_negra.png" alt="Estrella negra"></div>
+          <div>
+            <p><strong>Clasificación:</strong>Todos los publicos</p>
+            <p><strong>Año de publicación:</strong>1968</p>
+            <p><strong>Sinopsis:</strong>Es una película de ciencia ficción multitemática, que aborda temas como la
+              evolución humana, la tecnología, la inteligencia artificial y la vida extraterrestre. Se caracteriza
+              por un notable realismo científico, por sus revolucionarios efectos especiales, por algunas de sus
+              ambiguas y en algunos casos surrealistas e incluso psicodélicas imágenes. </p>
+              <p><a href="./single.html">Detalle...</a></p>
+           </div>
         </article>
         <article>
-          <a href="./single.html"><img src="./img/Robocop_org.jpg" alt="Robocop"></a>
+          <div class="imagenc org3"><img src="./img/estella_negra.png" alt="Estrella negra"></div>
+          <div>
+            <p><strong>Clasificación:</strong>+16</p>
+            <p><strong>Año de publicación:</strong>1987</p>
+            <p><strong>Sinopsis:</strong>El programa "RoboCop" requiere a un "candidato" recientemente fallecido para la conversión.
+              Para obtener uno, la OCP reorganiza la fuerza policial del oeste de la ciudad, donde la criminalidad es mayor, a la
+              espera de que un oficial muera en el cumplimiento de su deber y de ese modo se convierta en el primer candidato para
+              llevar a cabo el proyecto. Uno de estos oficiales es el recién transferido Alex J. Murphy, que tiene como compañera
+              de equipo a Anne Lewis. En su primera patrulla, persiguen a un grupo de delincuentes liderados por el jefe del crimen
+              organizado de la ciudad Clarence Boddicker hasta una vieja acerería abandonada.</p>
+              <p><a href="./single.html">Detalle...</a></p>
+           </div>
         </article>
         <article>
-          <a href="./single.html"><img src="./img/Rocky_org.JPG" alt="Rocky"></a>
+          <div class="imagenc org4"><img src="./img/estrella_dorada.jpg" alt="Estrella dorada"></div>
+          <div>
+            <p><strong>Clasificación:</strong>Todos los publicos</p>
+            <p><strong>Año de publicación:</strong>1976</p>
+            <p><strong>Sinopsis:</strong>Rocky Balboa es un boxeador de treinta años y de décima categoría que vive en
+              un pequeño apartamento al sureste de Filadelfia, Pensilvania. Su carrera en el ring no parece que vaya a
+              durar mucho tiempo. Se gana la vida como cobrador recaudando deudas para un usurero llamado Tony Gazzo,
+              pero Gazzo no cree que Rocky tenga la suficiente malicia para dar una paliza a un moroso cuando sea necesario.
+              Rocky aún se entrena de vez en cuando para no perder la forma, y el que fuera su entrenador, un excampeón de
+              los pesos gallos en la década de los años 1920, Mickey Goldmill, cree que Rocky podría llegar a lo más alto,
+              pero solo si tuviera la voluntad suficiente y se dedicara en cuerpo y alma al boxeo.</p>
+              <p><a href="./single.html">Detalle...</a></p>
+           </div>
         </article>
         <article>
-          <a href="./single.html"><img src="./img/Driving_Miss_Daisy_org.jpg" alt="Paseando a Miss Daisy"></a>
+          <div class="imagenc org5"><img src="./img/estella_negra.png" alt="Estrella negra"></div>
+          <div>
+            <p><strong>Clasificación:</strong>Todos los publicos</p>
+            <p><strong>Año de publicación:</strong>1989</p>
+            <p><strong>Sinopsis:</strong>En 1948 la señora Daisy Werthan, es una viuda judía de 72 años que vive en Atlanta,
+               Georgia, en la compañía de su trabajadora doméstica negra, llamada Idella. Después de un accidente en su automóvil
+               Chrysler, el hijo de la señora Daisy, Boolie, le contrata un chófer porque ninguna compañía de seguros la asegurará.
+               Ella se niega, pero Boolie está decidido a encontrar uno. Mientras tanto, ella está en casa incapaz de realizar sus
+               compras, visitar a sus amigos y asistir a la sinagoga, por no poder conducir. Boolie encuentra a un hombre,
+               Hoke Colburn. La señora Daisy en un principio se niega a la ayuda de Hoke, ante el hecho de que las personas
+               puedan llegar a creer que es demasiado vieja y tonta para conducir.</p>
+               <p><a href="./single.html">Detalle...</a></p>
+           </div>
         </article>
       </section>
       <section class="carrusel" id = "suecadas">
         <h1>Suecadas</h1>
         <article>
-          <a href="./single.html"><img src="./img/Ghostbusters.jpg" alt="Cazafantasmas"></a>
+          <div><a href="./single.html"><img src="./img/Ghostbusters.jpg" alt="Cazafantasmas"></a>
+            <img src="./img/estrella_dorada.jpg" alt="Estrella dorada"></div>
+          <div>
+            <p><strong>Clasificación:</strong>Todos los publicos</p>
+            <p><strong>Año de publicación:</strong>Debe ser en 1984</p>
+            <p><strong>Sinopsis:</strong>Pero los efectos especiales son muy cutres, tanto que no se pueden llamar efectos especiales.</p>
+            <p><a href="./single.html">Detalle...</a></p>
+           </div>
         </article>
         <article>
-          <a href="./single.html"><img src="./img/2001.JPG" alt="2001 Odisea en el espacio"></a>
+          <div><a href="./single.html"><img src="./img/2001.JPG" alt="2001 Odisea en el espacio"></a>
+            <img src="./img/estrella_dorada.jpg" alt="Estrella dorada"></div>
+          <div>
+            <p><strong>Clasificación:</strong>Todos los publicos</p>
+            <p><strong>Año de publicación:</strong>1968 ni de coña</p>
+            <p><strong>Sinopsis:</strong>Es una película de ciencia inficción y la banda sonora esta hecha con un casiotone. </p>
+            <p><a href="./single.html">Detalle...</a></p>
+           </div>
         </article>
         <article>
-          <a href="./single.html"><img src="./img/Robocop.jpg" alt="Robocop"></a>
+          <div><a href="./single.html"><img src="./img/Robocop.jpg" alt="Robocop"></a>
+            <img src="./img/estrella_dorada.jpg" alt="Estrella dorada"></div>
+          <div>
+            <p><strong>Clasificación:</strong>+16</p>
+            <p><strong>Año de publicación:</strong>En algun año</p>
+            <p><strong>Sinopsis:</strong>Este especie de policia con armadura da mas miedo que el gato del Sherk.</p>
+            <p><a href="./single.html">Detalle...</a></p>
+           </div>
         </article>
         <article>
-          <a href="./single.html"><img src="./img/Rocky.JPG" alt="Rocky"></a>
-        </article>
+         <div><a href="./single.html"><img src="./img/Rocky.JPG" alt="Rocky"></a>
+          <img src="./img/estrella_dorada.jpg" alt="Estrella dorada"></div>
+         <div>
+          <p><strong>Clasificación:</strong>Todos los publicos</p>
+          <p><strong>Año de publicación:</strong>1976 mas o menos</p>
+          <p><strong>Sinopsis:</strong>Rocky Balboa es un boxeador que tiene mas golpes que un saco de boxeo, y no sabe dar palo al agua.
+            Por eso, se dedica a fregar los suelos del gimansio</p>
+            <p><a href="./single.html">Detalle...</a></p>
+         </div>
+      </article>
         <article>
-          <a href="./single.html"><img src="./img/Driving_Miss_Daisy.jpg" alt="Paseando a Miss Daisy"></a>
+          <div><a href="./single.html"><img src="./img/Driving_Miss_Daisy.jpg" alt="Paseando a Miss Daisy">
+            <img src="./img/estella_negra.png" alt="Estrella negra"></a>
+          </div>
+          <div>
+            <p><strong>Clasificación:</strong>Todos los publicos</p>
+            <p><strong>Año de publicación:</strong>Mas viejo que Matusalen</p>
+            <p><strong>Sinopsis:</strong>Una abuela que se aburre en casa y se dedica a torturar a su chofer para que le de muchos
+              paseos con el coche que tiene mas años que la abuela.</p>
+              <p><a href="./single.html">Detalle...</a></p>
+           </div>
+
         </article>
       </section>
       <section class="carrusel" id = "parodias">
         <h1>Parodias</h1>
         <article>
-          <a href="./single.html"><img src="./img/spaceball.jpg" alt="Spaceball"></a>
+          <div><a href="./single.html"><img src="./img/spaceball.jpg" alt="Spaceball"></a>
+            <img src="./img/estrella_dorada.jpg" alt="Estrella dorada"></div>
+          <div>
+            <p><strong>Clasificación:</strong>Todos los publicos</p>
+            <p><strong>Año de publicación:</strong>1987</p>
+            <p><strong>Sinopsis:</strong>La princesa Vespa decide huir justo antes de su boda con el aburrido príncipe Valium y se escapa con
+              su robot Dot Matrix a bordo de una nave espacial Mercedes último modelo. En su huida es interceptada por la nave del malvado
+              Lord Casco Oscuro, quien trabaja para Pol, el presidente del planeta Spaceball, que ansía el aire puro del planeta Druidia.</p>
+              <p><a href="./single.html">Detalle...</a></p>
+           </div>
         </article>
         <article>
-          <a href="./single.html"><img src="./img/casi300.JPG" alt="Casi 300"></a>
+          <div><a href="./single.html"><img src="./img/casi300.JPG" alt="Casi 300"></a>
+            <img src="./img/estella_negra.png" alt="Estrella negra"></div>
+          <div>
+            <p><strong>Clasificación:</strong>Todos los publicos</p>
+            <p><strong>Año de publicación:</strong>2008</p>
+            <p><strong>Sinopsis:</strong>Leónidas, el héroe de Esparta, prepara la defensa de su patria ante el inminente ataque de los persas. ...
+              Para alcanzar la gloria, los espartanos tendrán que pasar por un sinfín de disparatadas situaciones.</p>
+              <p><a href="./single.html">Detalle...</a></p>
+           </div>
         </article>
         <article>
-          <a href="./single.html"><img src="./img/hot_shots.jpg" alt="Hot Shots"></a>
+          <div><a href="./single.html"><img src="./img/hot_shots.jpg" alt="Hot Shots"></a>
+            <img src="./img/estrella_dorada.jpg" alt="Estrella dorada"></div>
+          <div>
+            <p><strong>Clasificación:</strong>Todos los publicos</p>
+            <p><strong>Año de publicación:</strong>1991</p>
+            <p><strong>Sinopsis:</strong>Topper Harley, un militar retirado, vive en una reserva india en completo aislamiento bajo el nombre de
+              «Pies Conejo de Peluche». Topper nunca ha conseguido escapar de la sombra de su padre, piloto de la Armada, acusado de abandonar a
+              su suerte a su copiloto durante un accidente.</p>
+              <p><a href="./single.html">Detalle...</a></p>
+           </div>
         </article>
         <article>
-          <a href="./single.html"><img src="./img/austinpowers.JPG" alt="Austin Powers"></a>
+          <div><a href="./single.html"><img src="./img/austinpowers.JPG" alt="Austin Powers"></a>
+            <img src="./img/estrella_dorada.jpg" alt="Estrella dorada"></div>
+          <div>
+            <p><strong>Clasificación:</strong>+13</p>
+            <p><strong>Año de publicación:</strong>1997</p>
+            <p><strong>Sinopsis:</strong>En 1967, el espía británico Austin Powers y su archienemigo, el Dr. Evil2​, se han enfrentado varias
+              veces a lo largo de la década. Como los cómplices del Dr. Evil no han logrado asesinar a Austin, decide hacerlo él personalmente
+              tendiéndole una trampa en un club nocturno de Londres. Austin logra escapar y trata de detener al Dr. Evil, pero éste escapa en
+              una nave espacial que tiene la forma de la mascota de la marca de hamburguesas Big Boy y se congela criogénicamente para regresar
+              en algún momento del futuro. Austin decide congelarse también en caso de que sus servicios sean necesarios en el futuro.</p>
+              <p><a href="./single.html">Detalle...</a></p>
+           </div>
         </article>
         <article>
-          <a href="./single.html"><img src="./img/torrente.jpg" alt="Torrente"></a>
+          <div><a href="./single.html"><img src="./img/torrente.jpg" alt="Torrente"></a>
+            <img src="./img/estrella_dorada.jpg" alt="Estrella dorada"></div>
+          <div>
+            <p><strong>Clasificación:</strong>+18</p>
+            <p><strong>Año de publicación:</strong>1998</p>
+            <p><strong>Sinopsis:</strong>La historia cuenta las aventuras de José Luis Torrente, un policía machista, racista, franquista,
+               zafio, aficionado a las prostitutas, bebedor, consumidor de un poco de droga tomada con rigurosa mesura según él, fan de
+               El Fary, y fanático del equipo de fútbol Atlético de Madrid.</p>
+               <p><a href="./single.html">Detalle...</a></p>
+           </div>
         </article>
       </section>
     </main>

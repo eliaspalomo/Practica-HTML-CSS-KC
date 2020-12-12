@@ -1,0 +1,28 @@
+.carrusel{
+    position: relative;
+    top: var(--navbar-height);
+
+}
+
+.imagenc{
+    background-size: auto;
+    height: 20vw;
+    width: 50vw;
+}
+
+.imagenc > img{
+    float: right;
+    height: 2rem;
+    width: 2rem;
+}
+
+.org1{background: url('../img/Ghostbusters_org.jpg') top center no-repeat;}
+.org2{background: url('../img/2001_org.jpg') top center no-repeat;}
+.org3{background: url('../img/Robocop_org.jpg') top center no-repeat;}
+.org4{background: url('../img/Rocky_org.jpg') top center no-repeat;}
+.org5{background: url('../img/Driving_Miss_Daisy_org.jpg') top center no-repeat;}
+
+
+#suecadas, #parodias{
+    display: none;
+}
