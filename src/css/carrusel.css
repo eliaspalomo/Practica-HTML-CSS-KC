@@ -1,13 +1,46 @@
-.carrusel{
-    position: relative;
-    top: var(--navbar-height);
+.org1{background: url('../img/Ghostbusters_org.jpg') top center no-repeat;}
+.org2{background: url('../img/2001_org.jpg') top center no-repeat;}
+.org3{background: url('../img/Robocop_org.jpg') top center no-repeat;}
+.org4{background: url('../img/Rocky_org.jpg') top center no-repeat;}
+.org5{background: url('../img/Driving_Miss_Daisy_org.jpg') top center no-repeat;}
+.sue1{background: url('../img/Ghostbusters.jpg') top center no-repeat;}
+.sue2{background: url('../img/2001.jpg') top center no-repeat;}
+.sue3{background: url('../img/Robocop.jpg') top center no-repeat;}
+.sue4{background: url('../img/Rocky.jpg') top center no-repeat;}
+.sue5{background: url('../img/Driving_Miss_Daisy.jpg') top center no-repeat;}
+.par1{background: url('../img/spaceball.jpg') top center no-repeat;}
+.par2{background: url('../img/casi300.jpg') top center no-repeat;}
+.par3{background: url('../img/hot_shots.jpg') top center no-repeat;}
+.par4{background: url('../img/austinpowers.jpg') top center no-repeat;}
+.par5{background: url('../img/torrente.jpg') top center no-repeat;}
 
+.originales{
+    color: white;
+    text-shadow: 1px 1px 1px black, -1px 1px 1px black, 1px -1px 1px black, -1px -1px 1px black;
+}
+
+.suecadas{
+    color: gold;
+    text-shadow: 1px 1px 1px blue, -1px 1px 1px blue, 1px -1px 1px blue, -1px -1px 1px blue;
+}
+
+.parodias{
+    color: white;
+    text-shadow: 1px 1px 1px red, -1px 1px 1px red, 1px -1px 1px red, -1px -1px 1px red;
+}
+
+.peliculas{display: none;}
+
+
+.carrusel{
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .imagenc{
-    background-size: auto;
-    height: 20vw;
-    width: 50vw;
+    align-items: center;
+    height: 30vh;
+    width: 30vh;
 }
 
 .imagenc > img{
@@ -16,13 +49,32 @@
     width: 2rem;
 }
 
-.org1{background: url('../img/Ghostbusters_org.jpg') top center no-repeat;}
-.org2{background: url('../img/2001_org.jpg') top center no-repeat;}
-.org3{background: url('../img/Robocop_org.jpg') top center no-repeat;}
-.org4{background: url('../img/Rocky_org.jpg') top center no-repeat;}
-.org5{background: url('../img/Driving_Miss_Daisy_org.jpg') top center no-repeat;}
+.originales,.suecadas,.parodias{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
 
+.imagenc:hover{
+    height: 80vw;
+    width: 80vw;
+    background-size: cover;
+}
 
-#suecadas, #parodias{
-    display: none;
+.imagenc:hover .peliculas {
+    display: contents;
+    opacity: 1;
+    transform: translateY(0);
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+@media (min-width: 900px){
+    .originales,.suecadas,.parodias{
+        height: 35vh;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
