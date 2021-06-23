@@ -14,17 +14,17 @@
 .par4{background: url('../img/austinpowers.jpg') top center no-repeat;}
 .par5{background: url('../img/torrente.jpg') top center no-repeat;}
 
-.originales{
+.originales a{
     color: white;
     text-shadow: 1px 1px 1px black, -1px 1px 1px black, 1px -1px 1px black, -1px -1px 1px black;
 }
 
-.suecadas{
+.suecadas a{
     color: gold;
     text-shadow: 1px 1px 1px blue, -1px 1px 1px blue, 1px -1px 1px blue, -1px -1px 1px blue;
 }
 
-.parodias{
+.parodias a{
     color: white;
     text-shadow: 1px 1px 1px red, -1px 1px 1px red, 1px -1px 1px red, -1px -1px 1px red;
 }
@@ -38,8 +38,8 @@ p{padding: 0rem 0.5rem;}
 
 .imagenc{
     align-items: center;
-    height: 35vh;
-    width: 35vh;
+    height: 200px;
+    width: 200px;
     background-size: cover;
 }
 
@@ -52,7 +52,7 @@ p{padding: 0rem 0.5rem;}
 .originales,.suecadas,.parodias{
     font-size: 80%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex: 1;
     overflow: hidden;
     transition: 0.5s ease-in-out;
@@ -76,4 +76,17 @@ p{padding: 0rem 0.5rem;}
     transform: translateY(0%);
     transition: 0.5s;
     transition-delay: 0.5s;
+}
+
+@media (min-width: 1000px) {
+    .imagenc{
+        height: 250px;
+        width: 250px;
+    }
+}
+
+@media (min-width: 800px) {
+    .originales,.suecadas,.parodias{
+        flex-direction: row;
+    }
 }
