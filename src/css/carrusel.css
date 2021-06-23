@@ -31,8 +31,6 @@
 
 p{padding: 0rem 0.5rem;}
 
-.peliculas{display: none;}
-
 .carrusel{
     margin-left: 2rem;
     margin-right: 2rem;
@@ -40,8 +38,8 @@ p{padding: 0rem 0.5rem;}
 
 .imagenc{
     align-items: center;
-    height: 30vh;
-    width: 30vh;
+    height: 35vh;
+    width: 35vh;
     background-size: cover;
 }
 
@@ -52,37 +50,30 @@ p{padding: 0rem 0.5rem;}
 }
 
 .originales,.suecadas,.parodias{
+    font-size: 80%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex: 1;
     overflow: hidden;
     transition: 0.5s ease-in-out;
+    justify-content: space-between;
+}
+
+.pelicula {
+    margin: 2rem 1rem 0 1rem;
+    position: absolute;
+    min-height: 200px;
+    display: none;
 }
 
 .imagenc:hover{
-    height: 80vw;
-    width: 80vw;
     background-size: cover;
-}
+}    
 
-.imagenc:hover .peliculas {
-    display: contents;
+.imagenc:hover .pelicula {
+    display:contents;
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0%);
     transition: 0.5s;
     transition-delay: 0.5s;
-}
-
-@media (min-width: 900px){
-    .originales,.suecadas,.parodias{
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .imagenc:hover{
-        height: 30vw;
-        width: 40vw;
-        background-size: cover;
-    }
-   
 }
