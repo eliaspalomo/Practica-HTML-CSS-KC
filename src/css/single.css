@@ -8,3 +8,16 @@ body{
 main{
     text-shadow: 1px 1px 1px white, -1px 1px 1px white, 1px -1px 1px white, -1px -1px 1px white;
 }
+
+.imagen{
+    background: url('../img/rebobine.jpg') top center no-repeat;
+    background-size: cover;
+    height: 20rem;
+    width: 15rem;
+}
+
+.imagen > img{
+    float: right;
+    height: 2rem;
+    width: 2rem;
+}
