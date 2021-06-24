@@ -1,6 +1,8 @@
 body{
     display: flex;
     flex-direction: column;
+}
+header{
     margin: 2rem;
 
 }
